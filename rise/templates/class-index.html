@@ -1,0 +1,15 @@
+<html>
+	<head></head>
+	<body>
+		<a href="{{ url_for('newClass') }}">Add New</a>
+		<div class = 'pane'>
+			<h1>Classes</h1>
+			
+			<a href="{{ url_for('newClass') }}" > <p> Create a New Class </p> </a>
+			
+			{% for htmlClass in htmlClasses %}	
+				<p>{{htmlClass.class_name}}</p>		
+			{% endfor %}	
+		</div>
+	</body>
+</html>
