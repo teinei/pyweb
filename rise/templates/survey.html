@@ -1,23 +1,18 @@
 <html>
-
+<style>
+</style>
 <body>
 
-<h1>{{survey.name}}</h1>
 <!-- {{print code}} -->
 <!--  -->
-
-{% for i in items %}
+{% for survey in htmlSurveys %}	
 <!-- {% logic code %} -->
 <div>
 
-<p>{{i.name}}</p>
+<p>{{survey.class_name}}</p>
 
-<p>{{i.description}}</p>
-
-<p> {{i.price}} </p>
 
 </div>
-
 
 {% endfor %}
 </body>

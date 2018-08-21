@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <style>
+            *{
+                background-color: antiquewhite;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Read CSV</h1>
+        <p> 
+            <table border="1">
+                {% for row in csvReader %}
+                <tr>
+                    <td>{{ row }}</td>
+                </tr>
+                {% endfor %}
+            </table>	
+        </p>
+    </body>
+</html>

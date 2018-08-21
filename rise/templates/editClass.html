@@ -1,0 +1,119 @@
+
+<h1>Edit Class</h1>
+<form method="post" action="{{ url_for('editClass',class_id = riseClass.id)}}">
+<p>CLASS STAGE:
+    Select Here
+    <select name="class_stage">
+        <option value="BBC">BBC</option>
+        <option value="K1">K1/PreK</option>
+        <option value="K2">K2/K</option>
+        <option value="K3">K3/PreRise</option>
+        <option value="S1">S1</option>
+        <option value="S2">S2</option>
+        <option value="S3">S3</option>
+        <option value="S4">S4</option>
+        <option value="S5">S5</option>
+        <option value="S6">S6</option>
+        <option value="PreMiddle">PreMiddle</option>
+    </select>
+    or type in
+    <input type="text" name="class_stage_" placeholder = '{{riseClass.class_stage }}'>
+</p>
+<p>CLASS NUMBER:
+    select
+    <select name="class_name_a">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+    <select name="class_name_b">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+    or type here
+    <input type="text" name="class_name" placeholder = '{{riseClass.class_name }}'>
+</p>
+<p>main teacher:
+    <input type="text" name="d_teacher" placeholder = '{{riseClass.main_teacher }}'></p>
+<p>assist teacher:
+    <input type="text" name="co_teacher" placeholder = '{{riseClass.teaching_assistant }}'></p>
+<p>value="YYYY-MM-DD"</p>
+<p>start_date:
+<input type="text" name="start_date">
+</p>
+<p>open1:
+<input type="text" name="open1">
+</p>
+<p>open2:
+<input type="text" name="open2"></p>
+<p>open3:
+<input type="text" name="open3"></p>
+<p>graduate_date:
+    <input type="text" name="graduate_date" placeholder = '{{riseClass.graduate_date.date() }}' >
+    <select name="graduate_year">   
+        <option value="2017">2017</option>
+        <option value="2018">2018</option>
+        <option value="2019">2019</option>
+    </select>
+    <select name="graduate_month">
+    <!-- edit multiple lines, alt+command+up_arrow/down_arrow -->
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+    </select>
+    <select name="graduate_day">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+    </select>
+</p>
+<p><input type="submit" value="Edit done"/>
+<a href="{{ url_for('showRiseClasses') }}">Cancel</a></p>
+</form>

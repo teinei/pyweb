@@ -1,0 +1,194 @@
+
+<head>
+    <style>
+        .student_name, .main_teacher, .teaching_assistant, .class_stage, .class_name{
+            display: inline;
+            /*
+            display: block;
+            */
+        }
+        #q0{
+            visibility: hidden;
+        }
+    </style>
+</head>
+<h1>Add A New Survey</h1>
+<form method="post">
+<p class='class_stage'>CLASS STAGE:
+    Select Here
+    <select name="class_stage">
+        <option value="BBC">BBC</option>
+        <option value="K1">K1/PreK</option>
+        <option value="K2">K2/K</option>
+        <option value="K3">K3/PreRise</option>
+        <option value="S1">S1</option>
+        <option value="S2">S2</option>
+        <option value="S3">S3</option>
+        <option value="S4">S4</option>
+        <option value="S5">S5</option>
+        <option value="S6">S6</option>
+        <option value="PreMiddle">PreMiddle</option>
+    </select>
+    or type in
+    <input type="text" name="class_stage">
+</p class='class_name'>
+<p>CLASS NUMBER:
+    select
+    <select name="class_name_a">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+    <select name="class_name_b">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+    or type here
+    <input type="text" name="class_name">
+</p>
+<p class='student_name'>Student's Name:
+    <input type="text" name="student_name"></p>
+<p class='main_teacher'>main teacher:
+    <input type="text" name="main_teacher"></p>
+<p class='teaching_assistant'>assist teacher:
+    <input type="text" name="teaching_assistant"></p>
+<!-- test -->
+<p id='q1'>
+    q1 :
+    10<input type="radio" name='q1' value='10' >
+    9<input type = 'radio' name='q1' value='9' >
+    8<input type='radio' name='q1' value='8'>
+    7<input type='radio' name='q1' value='7'>
+    6 and below<input type='radio' name='q1' value='6'>
+</p>
+
+<p id='q2'>
+        q2 :
+        10<input type="radio" name='q2' value='10' >
+        9<input type = 'radio' name='q2' value='9' >
+        8<input type='radio' name='q2' value='8'>
+        7<input type='radio' name='q2' value='7'>
+        6 and below<input type='radio' name='q2' value='6'>
+</p>
+<p id='q3'>
+        q3 :
+        10<input type="radio" name='q3' value='10' >
+        9<input type = 'radio' name='q3' value='9' >
+        8<input type='radio' name='q3' value='8'>
+        7<input type='radio' name='q3' value='7'>
+        6 and below<input type='radio' name='q3' value='6'>
+</p>
+<!-- test -->
+<p id='q4'>
+        q4 :
+        10<input type="radio" name='q4' value='10' >
+        9<input type = 'radio' name='q4' value='9' >
+        8<input type='radio' name='q4' value='8'>
+        7<input type='radio' name='q4' value='7'>
+        6 and below<input type='radio' name='q4' value='6'>
+</p>
+<!-- test -->
+<p id='q5'>
+        q5 :
+        10<input type="radio" name='q5' value='10' >
+        9<input type = 'radio' name='q5' value='9' >
+        8<input type='radio' name='q5' value='8'>
+        7<input type='radio' name='q5' value='7'>
+        6 and below<input type='radio' name='q5' value='6'>
+</p>
+<!-- test -->
+<p>
+    q11:
+    1.已续报<input type='radio' name='q11' value='1'>
+    2.是，会续报<input type='radio' name='q11' value='2'>
+    3.正在考虑<input type='radio' name='q11' value='3'>
+    4.否，不续报<input type='radio' name='q11' value='4'>
+</p>
+<p>
+    text1<br>
+    <textarea name='text1' row='4' cols='50'>
+    </textarea>
+</p>
+<p>
+    text2<br>
+    <textarea name='text2' row='4' cols='50'>
+    </textarea>
+</p>
+<p>
+    text3<br>
+    <textarea name='text3' row='4' cols='50'>
+    </textarea>
+</p>
+<p>open_date:
+    <input type="text" name="open_date">
+    <select name="open_year">   
+        <option value="2018">2018</option>
+        <option value="2019">2019</option>
+    </select>
+    <select name="open_month">
+    <!-- edit multiple lines, alt+command+up_arrow/down_arrow -->
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+    </select>
+    <select name='open_day'>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="26">27</option>
+        <option value="26">28</option>
+        <option value="26">29</option>
+        <option value="26">30</option>
+        <option value="26">31</option>
+    </select>
+</p>
+<p><input type="submit" value="Add New"/>
+<a href="{{ url_for('showRiseClasses') }}">Cancel</a></p>
+</form>

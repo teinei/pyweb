@@ -63,6 +63,7 @@ class Survey(Base): #table: survey
     class_id=Column(Integer,ForeignKey('rise_class.id'))
     class_name=Column(Integer) #class_name/class_id,
     tel=Column(Integer) #telephone/cellphone number
+
 class WeeklyReport(Base):
     __tablename__ = 'weekly_report'
     id=Column(Integer,primary_key=True)
