@@ -38,10 +38,29 @@ def showSurveys():
     return render_template('survey-index.html',htmlSurveys=surveys)
     #
 
+#function to add new survey
 @app.route('/survey/new' , methods=['GET','POST'])
 def newSurvey():
-    #
-    return render_template('newSurvey.html')
+    if request.method == 'POST':
+        
+        py_class_stage = request.form['html_class_stage']
+        classNameA = request.form['class_name_a']
+        classNameB = request.form['class_name_b']
+        py_class_name = classNameA+classNameB
+        py_student_name = request.form['html_student_name']
+        #
+        # assign all post args to class
+        newSurvey = Survey(db_class_stage=py_class_stage,class_name=py_class_name,student_name=py_student_name)
+        # add to db
+        # ------------
+        # session.add(newSurvey)
+        # session.commit()
+        
+        # return
+        return render_template('newSurvey.html',py2html_class_stage=py_class_stage,py2html_class_name=py_class_name,py2html_student_name=py_student_name)
+    else: 
+        return render_template('newSurvey.html')
+    
     #
 
 @app.route('/class')
@@ -55,6 +74,7 @@ def readCSV():
     return render_template('read-csv.html')
     #
 
+#function to add new class
 @app.route('/class/new',methods=['GET','POST'])
 @app.route('/class/new/',methods=['GET','POST'])
 def newClass():
@@ -62,9 +82,8 @@ def newClass():
         newClass = RiseClass(class_name=request.form['class_name'])
         session.add(newClass)
         session.commit()
-        return redirect(url_for('showRiseClasses'))
-        #redirect, why use redirect
-        #
+        #return redirect(url_for('showRiseClasses'))
+        return render_template('newClass.html')
     else:
         return render_template('newClass.html')
 #

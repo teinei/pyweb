@@ -16,7 +16,7 @@
 <form method="post">
 <p class='class_stage'>CLASS STAGE:
     Select Here
-    <select name="class_stage">
+    <select name="html_class_stage">
         <option value="BBC">BBC</option>
         <option value="K1">K1/PreK</option>
         <option value="K2">K2/K</option>
@@ -30,7 +30,7 @@
         <option value="PreMiddle">PreMiddle</option>
     </select>
     or type in
-    <input type="text" name="class_stage">
+    <input type="text" name="class_stage" placeholder = '{{ py2html_class_stage }}'>
 </p class='class_name'>
 <p>CLASS NUMBER:
     select
@@ -59,15 +59,16 @@
         <option value="9">9</option>
     </select>
     or type here
-    <input type="text" name="class_name">
+    <input type="text" name="class_name" placeholder = '{{ py2html_class_name }}' >
 </p>
+<!-- students name -->
 <p class='student_name'>Student's Name:
-    <input type="text" name="student_name"></p>
+    <input type="text" name="html_student_name" placeholder = '{{ py2html_student_name }}' ></p>
 <p class='main_teacher'>main teacher:
     <input type="text" name="main_teacher"></p>
 <p class='teaching_assistant'>assist teacher:
     <input type="text" name="teaching_assistant"></p>
-<!-- test -->
+<!-- comment -->
 <p id='q1'>
     q1 :
     10<input type="radio" name='q1' value='10' >

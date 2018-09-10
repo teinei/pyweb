@@ -59,6 +59,7 @@ class Survey(Base): #table: survey
     text2=Column(Text)
     text3=Column(Text)
     #student and class
+    db_class_stage=Column(String(80))
     student_name=Column(String(80))    #student_name/student_id,
     class_id=Column(Integer,ForeignKey('rise_class.id'))
     class_name=Column(Integer) #class_name/class_id,
